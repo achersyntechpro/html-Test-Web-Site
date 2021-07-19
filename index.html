@@ -10,12 +10,7 @@
 		outline: 1px solid #F8D107;
 	}
 </style>
-<script>
-	console.log('test2');
-	console.log(document.getElementsByClassName("helpButton").item(0));
-        document.getElementsByClassName("helpButton").item(0).click();
-	
-</script>
+
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
@@ -68,6 +63,15 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+</script>
+<script>
+	console.log('test3');
+	console.log(document.getElementsByClassName("helpButton"));
+	console.log(document.getElementsByClassName("helpButton").length);
+	console.log(document.getElementsByClassName("helpButton")[0]);
+	console.log(document.getElementsByClassName("helpButton").item(0));
+        document.getElementsByClassName("helpButton").item(0).click();
+	
 </script>
 	<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
 	<h1 style="color: #5e9ca0;">You can edit <span style="color: #2b2301;">this demo</span> text!</h1>
