@@ -60,15 +60,16 @@
 			initESW(null);
 		};
 		document.body.appendChild(s);
-			console.log('test6');
-		console.log(document.querySelector(".helpButton"));
-		document.querySelector(".helpButton").click();
 	} else {
 		initESW('https://service.force.com');
-			console.log('test6');
-		console.log(document.querySelector(".helpButton"));
-		document.querySelector(".helpButton").click();
 	}
+	setTimeout(function(){ 	
+		console.log('test9');
+	console.log(document.getElementsByClassName("helpButton"));
+	console.log(document.getElementsByClassName("helpButton").length);
+	console.log(document.getElementsByClassName("helpButton")[0]);
+	console.log(document.getElementsByClassName("helpButton").item(0));
+        document.getElementsByClassName("helpButton").item(0).click(); }, 5000);
 </script>
 	<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
 	<h1 style="color: #5e9ca0;">You can edit <span style="color: #2b2301;">this demo</span> text!</h1>
