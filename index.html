@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <title>HTML basics</title>
     </head>
-    <body
+    <body>
+
 
     </body>
     <script>
+    if(/Android|webOS|iPhone|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 
 	    let img = document.createElement("img");
-		img.src = "whatsapp.gif";
+		img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png";
 		img.style.width = 'auto'
 		img.style.height = '10%'
 		img.style.position = 'fixed'
@@ -20,5 +22,6 @@
 		img.onclick = function () {
 		  	window.open('https://wa.me/972525804072');
 		};
+	}
     </script>
 </html>
